@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Premium</title>
+  <link rel="stylesheet" type="text/css" href="Buying.css">
+  <script>
+    function myfun1(){
+        let text="You are about to make a payment of about 400 dollars";
+        if(confirm(text) == true){
+            window.open("Premium.html")
+        }
+        else{
+            alert("You cancelled payment");
+           window.open("Buying.html");
+        }
+        document.getElementById("demo").innerHTML=text;
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="now">Wonder Gaming</div>
+        <nav>
+          <a href="Game1.html">Home</a>
+          <a href="Game1.html">Top Games</a>
+          <a href="Game1.html">New Releases</a>
+          <a href="Game1.html">Reviews</a>
+          <a href="Contact.html">Contact</a>
+        </nav>
+      </header>
+  <div class="buy-container">
+    <h1>Buy Premium!</h1>
+    <p>Allows to buy any Game with all special items Unlocked</p>
+    <button onclick="myfun1()">Buy !!!</button>
+  </div>
+</body>
+</html>
